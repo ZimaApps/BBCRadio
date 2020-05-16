@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@+id/info_text"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    android:shadowColor="#FFFFFF"
+    android:shadowRadius="2"
+    android:shadowDx="1"
+    android:shadowDy="1"
+    android:textAllCaps="true"
+    android:textColor="@android:color/darker_gray"
+    android:text="BBC Word Service"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

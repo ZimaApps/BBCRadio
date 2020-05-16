@@ -1,0 +1,57 @@
+{
+  "project_info": {
+    "project_number": "390396247790",
+    "firebase_url": "https://bbcradio-fac08.firebaseio.com",
+    "project_id": "bbcradio-fac08",
+    "storage_bucket": "bbcradio-fac08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390396247790:android:6ea8635049fc88c7",
+        "android_client_info": {
+          "package_name": "tz.co.nyotaapps.bbcradio.bbcradio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390396247790-6d4cuqqgg857bdr2o4ba0fbr0sk2o6pa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tz.co.nyotaapps.bbcradio.bbcradio",
+            "certificate_hash": "ac4764b940e3104b83c482fa1ebdf8fdbc629f55"
+          }
+        },
+        {
+          "client_id": "390396247790-vd0mmtf4m1jdcj8nsbsrkeg2pd4btq4k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tz.co.nyotaapps.bbcradio.bbcradio",
+            "certificate_hash": "96af04f33388c0a7f291eb09f71a33cf27c9e517"
+          }
+        },
+        {
+          "client_id": "390396247790-7rf54jct9hjnqcmhan2tobkn0gaovtb5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWsgLHDfWn89DKSLO4lUIADGdmcf7leJY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390396247790-7rf54jct9hjnqcmhan2tobkn0gaovtb5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-4482019772887748~6245522576"
+    }
+  ],
+  "configuration_version": "1"
+}

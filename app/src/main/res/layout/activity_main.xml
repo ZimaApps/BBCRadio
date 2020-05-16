@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+
+        <LinearLayout
+            android:id="@+id/weekend"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+
+            android:orientation="vertical">
+
+
+
+            <com.skyfishjy.library.RippleBackground
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/content"
+                app:rb_color="#0099CC"
+                app:rb_radius="28dp"
+                app:rb_rippleAmount="2"
+                app:rb_duration="3000"
+                app:rb_scale="6">
+                <ImageView
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/centerImage"
+                    android:tint="#FFFFFF"
+                    android:src="@drawable/ic_mic_black_24dp"/>
+            </com.skyfishjy.library.RippleBackground>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/playergui"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/weekendtwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="@android:color/white"
+                android:shadowRadius="2"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:text="STREAM NAME"/>
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/loading_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateTintMode="src_atop"
+                android:indeterminateTint="@color/green"
+                android:layout_gravity="center" />
+            <TextView
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:id="@+id/wloading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="@android:color/white"
+                android:shadowRadius="2"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:textColor="@color/green"
+                android:textSize="14sp"
+                android:text="loading..."/>
+
+            <com.google.android.exoplayer2.ui.PlaybackControlView
+                android:id="@+id/video_view"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                app:use_controller="true"
+                app:show_timeout="0"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.5"
+            android:paddingBottom="50dp"
+            >
+            <LinearLayout
+                android:id="@+id/trump"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-4482019772887748/9442531551">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
